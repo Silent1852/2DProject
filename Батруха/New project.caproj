@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3opc9w3mwif2e</unique-id>
+    <saved-with-version>27200</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Sprite" sid="342327194129172">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="136177456208036">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Standing" pingpong="0" repeatcount="1" repeatto="0" sid="555178864271240" speed="3">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\project\AllAnimations\StandMH\НовыеНа150\MainHeroStandRight.png">
+                        <collision-poly>
+                            <point x="0.256148" y="0.424383" />
+                            <point x="0.729508" y="0.422839" />
+                            <point x="0.729508" y="1" />
+                            <point x="0.254098" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.513274" hotspotY="0.993789" original-source="C:\project\AllAnimations\StandMH\НовыеНа150\MainHeroStandRight2.png">
+                        <collision-poly>
+                            <point x="0.256148" y="0.424383" />
+                            <point x="0.729508" y="0.422839" />
+                            <point x="0.729508" y="1" />
+                            <point x="0.254098" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="1" name="Running" pingpong="0" repeatcount="1" repeatto="0" sid="763333351023087" speed="10">
+                    <frame duration="1" hotspotX="0.541353" hotspotY="0.994536" original-source="C:\project\AllAnimations\RunningMH\НовыеНа150\RUN4.png">
+                        <collision-poly>
+                            <point x="0.256148" y="0.424383" />
+                            <point x="0.729508" y="0.422839" />
+                            <point x="0.729508" y="1" />
+                            <point x="0.254098" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504673" hotspotY="1" original-source="C:\project\AllAnimations\RunningMH\НовыеНа150\RUN1.png">
+                        <collision-poly>
+                            <point x="0.256148" y="0.424383" />
+                            <point x="0.729508" y="0.422839" />
+                            <point x="0.729508" y="1" />
+                            <point x="0.254098" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.522936" hotspotY="0.993865" original-source="C:\project\AllAnimations\RunningMH\НовыеНа150\RUN2.png">
+                        <collision-poly>
+                            <point x="0.162111" y="0.424383" />
+                            <point x="0.729508" y="0.424373" />
+                            <point x="0.729508" y="1" />
+                            <point x="0.162355" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\project\AllAnimations\RunningMH\НовыеНа150\RUN3.png">
+                        <collision-poly>
+                            <point x="0.256148" y="0.424383" />
+                            <point x="0.729508" y="0.422839" />
+                            <point x="0.729508" y="1" />
+                            <point x="0.254098" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="1" name="Jumping" pingpong="0" repeatcount="1" repeatto="0" sid="347080858358867" speed="-1">
+                    <frame duration="1" hotspotX="0.483051" hotspotY="0.994505" original-source="C:\project\AllAnimations\JumpingMH\НовыеНа150\JUMP1.png">
+                        <collision-poly>
+                            <point x="0.256148" y="0.424383" />
+                            <point x="0.729508" y="0.422839" />
+                            <point x="0.729508" y="1" />
+                            <point x="0.254098" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\project\AllAnimations\JumpingMH\НовыеНа150\JUMP2.png">
+                        <collision-poly>
+                            <point x="0.256148" y="0.424383" />
+                            <point x="0.729508" y="0.422839" />
+                            <point x="0.729508" y="1" />
+                            <point x="0.254098" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504673" hotspotY="1" original-source="C:\project\AllAnimations\JumpingMH\НовыеНа150\JUMP3.png">
+                        <collision-poly>
+                            <point x="0.256148" y="0.424383" />
+                            <point x="0.729508" y="0.422839" />
+                            <point x="0.729508" y="1" />
+                            <point x="0.254098" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504274" hotspotY="1" original-source="C:\project\AllAnimations\JumpingMH\НовыеНа150\JUMP4.png">
+                        <collision-poly>
+                            <point x="0.256148" y="0.424383" />
+                            <point x="0.729508" y="0.422839" />
+                            <point x="0.729508" y="1" />
+                            <point x="0.254098" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\project\AllAnimations\JumpingMH\НовыеНа150\JUMP5.png">
+                        <collision-poly>
+                            <point x="0.256148" y="0.424383" />
+                            <point x="0.729508" y="0.422839" />
+                            <point x="0.729508" y="1" />
+                            <point x="0.254098" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Crouch" pingpong="0" repeatcount="1" repeatto="0" sid="329564612940301" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\project\AllAnimations\CrouchMH\НовыеНа150\Crouch1.png">
+                        <collision-poly>
+                            <point x="0.256148" y="0.424383" />
+                            <point x="0.729508" y="0.422839" />
+                            <point x="0.729508" y="1" />
+                            <point x="0.254098" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.540984" hotspotY="0.993827" original-source="C:\project\AllAnimations\CrouchMH\НовыеНа150\Crouch2.png">
+                        <collision-poly>
+                            <point x="0.256148" y="0.424383" />
+                            <point x="0.729508" y="0.422839" />
+                            <point x="0.729508" y="1" />
+                            <point x="0.254098" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="143495687479893">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="FonPervogoZemlya" sid="995706854128613">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="194889532245769">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="574220817025998" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504951" original-source="C:\project\Backgrounds\FonPervogoZemlya.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="1" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="986645096998298">
+            <conditions>
+                <condition id="2" name="Key is down" sid="801019099005918" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="765603787717597" type="Sprite">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="436882557201600" type="Sprite">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="363159647305648">
+            <conditions>
+                <condition id="2" name="Key is down" sid="551782823049034" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="642619085194430" type="Sprite">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="592279159010485" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="540746460974718">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="927974618045318" type="Keyboard">
+                    <param id="0" name="Key">87</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="859232543999329" type="Sprite">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="981130294542823">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="234125102912585" type="Sprite" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="573446368952012">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="192942739367100" type="Sprite" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="841719144999442" type="Sprite">
+                            <param id="0" name="Animation">&quot;Running&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="530989796731764">
+                    <conditions>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="707114543233043" type="Sprite" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="166489841833085" type="Sprite">
+                            <param id="0" name="Animation">&quot;Standing&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
