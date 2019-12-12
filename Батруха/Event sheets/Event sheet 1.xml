@@ -36,7 +36,7 @@
         <event-block sid="540746460974718">
             <conditions>
                 <condition id="0" name="On key pressed" sid="927974618045318" type="Keyboard">
-                    <param id="0" name="Key">87</param>
+                    <param id="0" name="Key">32</param>
                 </condition>
             </conditions>
             <actions>

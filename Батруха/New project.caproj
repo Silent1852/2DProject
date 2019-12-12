@@ -70,7 +70,7 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="4" loop="1" name="Running" pingpong="0" repeatcount="1" repeatto="0" sid="763333351023087" speed="10">
+                <animation framecount="4" loop="1" name="Running" pingpong="0" repeatcount="1" repeatto="0" sid="763333351023087" speed="9">
                     <frame duration="1" hotspotX="0.541353" hotspotY="0.994536" original-source="C:\project\AllAnimations\RunningMH\НовыеНа150\RUN4.png">
                         <collision-poly>
                             <point x="0.256148" y="0.424383" />
@@ -95,7 +95,7 @@
                             <point x="0.162355" y="1" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\project\AllAnimations\RunningMH\НовыеНа150\RUN3.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\project\AllAnimations\RunningMH\НовыеНа150\RUN3.png">
                         <collision-poly>
                             <point x="0.256148" y="0.424383" />
                             <point x="0.729508" y="0.422839" />
