@@ -12,10 +12,12 @@
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -24,7 +26,7 @@
     </configurations>
     <window-size>
         <width>1600</width>
-        <height>765</height>
+        <height>750</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -162,20 +164,14 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Zemlya" sid="209331574218713">
-            <plugin id="TiledBg" />
-            <behaviors>
-                <behavior-type name="Solid" sid="524466550146891">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <texture original-source="C:\Users\MacSquizzy\Downloads\FonVtorogooZemlya.png" />
-        </object-type>
         <object-type name="Karkas" sid="139448662898174">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Platform" sid="130930075648926">
                     <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="111755769131325">
+                    <behavior id="scrollto" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -186,6 +182,41 @@
         </object-type>
         <object-type name="Keyboard" sid="606325609352133">
             <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Fon" sid="154907188331177">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\MacSquizzy\Downloads\FonVtorogo.png" />
+        </object-type>
+        <object-type name="Zemlya" sid="444447551120980">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="863294313373224">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\MacSquizzy\Downloads\FonVtorogooZemlya.png" />
+        </object-type>
+        <object-type name="Sakura" sid="836173798408777">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="633988587938783" speed="5">
+                    <frame duration="1" hotspotX="0.32312" hotspotY="0.546823" original-source="C:\Users\MacSquizzy\Downloads\cherry1280.png">
+                        <collision-poly>
+                            <point x="0.00835655" y="0.406355" />
+                            <point x="0.32312" y="0.0886288" />
+                            <point x="0.817549" y="0.190635" />
+                            <point x="0.796657" y="0.546823" />
+                            <point x="0.601671" y="0.643813" />
+                            <point x="0.32312" y="0.971572" />
+                            <point x="0.151811" y="0.51505" />
+                            <point x="0.263231" y="0.546823" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="200335607976873">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
