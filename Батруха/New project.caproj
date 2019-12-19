@@ -17,6 +17,8 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -102,7 +104,7 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="4" loop="0" name="Jumping" pingpong="0" repeatcount="1" repeatto="0" sid="202745730669399" speed="3">
+                <animation framecount="3" loop="0" name="Jumping" pingpong="0" repeatcount="1" repeatto="0" sid="202745730669399" speed="3">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\project\AllAnimations\JumpingMH\НовыеНа150\JUMP1.png">
                         <collision-poly>
                             <point x="0.20339" y="0.269231" />
@@ -119,32 +121,16 @@
                             <point x="0.290984" y="1" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.504274" hotspotY="1" original-source="C:\project\AllAnimations\JumpingMH\НовыеНа150\JUMP4.png">
+                    <frame duration="1" hotspotX="0.504673" hotspotY="1" original-source="C:\project\AllAnimations\JumpingMH\НовыеНа150\JUMP3.png">
                         <collision-poly>
-                            <point x="0.326923" y="0.291401" />
-                            <point x="0.726495" y="0.289809" />
-                            <point x="0.720085" y="1" />
-                            <point x="0.331197" y="1" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\project\AllAnimations\JumpingMH\НовыеНа150\JUMP5.png">
-                        <collision-poly>
-                            <point x="0.229508" y="0.345679" />
-                            <point x="0.741803" y="0.347222" />
-                            <point x="0.745902" y="1" />
-                            <point x="0.229508" y="1" />
+                            <point x="0.0934579" y="0.437159" />
+                            <point x="0.635514" y="0.437158" />
+                            <point x="0.859813" y="1" />
+                            <point x="0.598131" y="1" />
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="3" loop="0" name="Fall" pingpong="0" repeatcount="1" repeatto="0" sid="475682125249076" speed="0">
-                    <frame duration="1" hotspotX="0.504673" hotspotY="1" original-source="C:\project\AllAnimations\JumpingMH\НовыеНа150\JUMP3.png">
-                        <collision-poly>
-                            <point x="0.135514" y="0.333333" />
-                            <point x="0.654206" y="0.333333" />
-                            <point x="0.869159" y="1" />
-                            <point x="0.570093" y="1" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="2" loop="1" name="Fall" pingpong="0" repeatcount="1" repeatto="0" sid="475682125249076" speed="0">
                     <frame duration="1" hotspotX="0.538462" hotspotY="0.993631" original-source="C:\project\AllAnimations\JumpingMH\НовыеНа150\JUMP4.png">
                         <collision-poly>
                             <point x="0.333333" y="0.350318" />
@@ -217,6 +203,80 @@
         </object-type>
         <object-type name="Text" sid="200335607976873">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="Platform1" sid="422437433711971">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="387533964686840">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="146626903540701" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.666667" original-source="C:\Users\MacSquizzy\Downloads\platfo.gif">
+                        <collision-poly>
+                            <point x="0.117647" y="0.047619" />
+                            <point x="0.882353" y="0.047619" />
+                            <point x="0.970588" y="0.666667" />
+                            <point x="0.676471" y="0.952381" />
+                            <point x="0.323529" y="0.952381" />
+                            <point x="0.0294118" y="0.666667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Background2" sid="568518211591942">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="641306618526187">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="681314360098148">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="930848282103726" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.833333" original-source="C:\Users\MacSquizzy\Downloads\platforn2.gif">
+                        <collision-poly>
+                            <point x="0.03125" y="0.0763889" />
+                            <point x="0.5" y="0.0555556" />
+                            <point x="0.960938" y="0.0763889" />
+                            <point x="0.941406" y="0.875" />
+                            <point x="0.578125" y="0.944444" />
+                            <point x="0.4375" y="0.944444" />
+                            <point x="0.0585938" y="0.881944" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Background3" sid="100588055230499">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="579265984000458">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="715073478031719">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="706849262095031" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\MacSquizzy\Downloads\platforn2.gif">
+                        <collision-poly>
+                            <point x="0.046875" y="0.0555556" />
+                            <point x="0.5" y="0.0555556" />
+                            <point x="0.925781" y="0.0625" />
+                            <point x="0.933594" y="0.791667" />
+                            <point x="0.5625" y="0.944444" />
+                            <point x="0.4375" y="0.944444" />
+                            <point x="0.0585938" y="0.784722" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

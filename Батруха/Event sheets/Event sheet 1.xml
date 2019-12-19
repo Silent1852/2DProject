@@ -3,108 +3,151 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
-        <event-block sid="344122384774498">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="957420918125886" type="System" />
-            </conditions>
-            <actions>
-                <action id="-4" name="Set position to another object" sid="697184732373020" type="MainHero">
-                    <param id="0" name="Object">Karkas</param>
-                    <param id="1" name="Image point (optional)">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="236695005664028">
-            <conditions>
-                <condition id="2" name="Key is down" sid="555701429908804" type="Keyboard">
-                    <param id="0" name="Key">68</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Platform" id="7" name="Simulate control" sid="339189400762624" type="Karkas">
-                    <param id="0" name="Control">1</param>
-                </action>
-                <action id="7" name="Set mirrored" sid="294011124059237" type="MainHero">
-                    <param id="0" name="State">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="814949349737487">
-            <conditions>
-                <condition id="2" name="Key is down" sid="334117409979094" type="Keyboard">
-                    <param id="0" name="Key">65</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Platform" id="7" name="Simulate control" sid="709686716013563" type="Karkas">
-                    <param id="0" name="Control">0</param>
-                </action>
-                <action id="7" name="Set mirrored" sid="811017826098891" type="MainHero">
-                    <param id="0" name="State">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="379191459470125">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="665818100132313" type="Keyboard">
-                    <param id="0" name="Key">32</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Platform" id="7" name="Simulate control" sid="283258057793661" type="Karkas">
-                    <param id="0" name="Control">2</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="301571401555391">
-            <conditions>
-                <condition behavior="Platform" id="2" name="Is on floor" sid="317469543307162" type="Karkas" />
-            </conditions>
-            <actions />
+        <event-group description="" sid="689882734939595" title="Control">
             <sub-events>
-                <event-block sid="346717220506484">
+                <event-block sid="344122384774498">
                     <conditions>
-                        <condition behavior="Platform" id="0" name="Is moving" sid="780770083046251" type="Karkas" />
+                        <condition id="-1" name="Every tick" sid="957420918125886" type="System" />
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="804772218190543" type="MainHero">
-                            <param id="0" name="Animation">&quot;Running&quot;</param>
+                        <action id="-4" name="Set position to another object" sid="697184732373020" type="MainHero">
+                            <param id="0" name="Object">Karkas</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="236695005664028">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="555701429908804" type="Keyboard">
+                            <param id="0" name="Key">68</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="339189400762624" type="Karkas">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="294011124059237" type="MainHero">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="814949349737487">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="334117409979094" type="Keyboard">
+                            <param id="0" name="Key">65</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="709686716013563" type="Karkas">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="811017826098891" type="MainHero">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="379191459470125">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="665818100132313" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="283258057793661" type="Karkas">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="748173697593098" title="Animation">
+            <sub-events>
+                <event-block sid="301571401555391">
+                    <conditions>
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="317469543307162" type="Karkas" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="346717220506484">
+                            <conditions>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="780770083046251" type="Karkas" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="804772218190543" type="MainHero">
+                                    <param id="0" name="Animation">&quot;Running&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="261212402552983">
+                            <conditions>
+                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="609118758018064" type="Karkas" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="247107440418582" type="MainHero">
+                                    <param id="0" name="Animation">&quot;Standing&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="552175897357059">
+                    <conditions>
+                        <condition behavior="Platform" id="5" name="On jump" sid="655986750193667" type="Karkas" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="751215785114890" type="MainHero">
+                            <param id="0" name="Animation">&quot;Jumping&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="261212402552983">
+                <event-block sid="311829056509201">
                     <conditions>
-                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="609118758018064" type="Karkas" />
+                        <condition behavior="Platform" id="6" name="On fall" sid="252395056126925" type="Karkas" />
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="747331552481857">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="784439447801559" type="Keyboard">
+                            <param id="0" name="Key">83</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="247107440418582" type="MainHero">
-                            <param id="0" name="Animation">&quot;Standing&quot;</param>
+                        <action behavior="Platform" id="12" name="Fall through" sid="175052436582401" type="Karkas" />
+                        <action id="4" name="Set animation" sid="854832666721126" type="MainHero">
+                            <param id="0" name="Animation">&quot;Fall&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="552175897357059">
+        </event-group>
+        <event-block sid="527483806932118">
             <conditions>
-                <condition behavior="Platform" id="5" name="On jump" sid="655986750193667" type="Karkas" />
+                <condition id="-10" name="Compare opacity" sid="317486467462543" type="Background3">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">50</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="751215785114890" type="MainHero">
-                    <param id="0" name="Animation">&quot;Jumping&quot;</param>
-                    <param id="1" name="From">1</param>
+                <action id="11" name="Set collisions enabled" sid="619903901853226" type="Background3">
+                    <param id="0" name="Collisions">0</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="311829056509201">
+        <event-block sid="151720915129106">
             <conditions>
-                <condition behavior="Platform" id="6" name="On fall" sid="252395056126925" type="Karkas" />
+                <condition id="-10" name="Compare opacity" sid="194940020775500" type="Background3">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="448671646588435" type="MainHero">
-                    <param id="0" name="Animation">&quot;Fall&quot;</param>
-                    <param id="1" name="From">1</param>
+                <action id="11" name="Set collisions enabled" sid="811830501576562" type="Background3">
+                    <param id="0" name="Collisions">1</param>
                 </action>
             </actions>
         </event-block>
