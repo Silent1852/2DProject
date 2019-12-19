@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>22l0tfbs1yqfg</unique-id>
+    <saved-with-version>27500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+    </used-plugins>
+    <used-behaviors />
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1600</width>
+        <height>900</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Button3" sid="596480903715808">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="206576963689857" speed="0">
+                    <frame duration="1" hotspotX="0.491071" hotspotY="0.495935" original-source="C:\Users\marke\Desktop\Project Models\Menu\Buttons1.png" />
+                    <frame duration="1" hotspotX="0.491176" hotspotY="0.492308" original-source="C:\Users\marke\Desktop\Project Models\Menu\Button2-3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button1" sid="462357041454429">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="842388930320171" speed="0">
+                    <frame duration="1" hotspotX="0.505988" hotspotY="0.463415" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.461538" original-source="C:\Users\marke\Desktop\Project Models\Menu\Button2-1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button2" sid="583379222377317">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="818313310026308" speed="0">
+                    <frame duration="1" hotspotX="0.525373" hotspotY="0.459677" />
+                    <frame duration="1" hotspotX="0.523529" hotspotY="0.453846" original-source="C:\Users\marke\Desktop\Project Models\Menu\Button2-2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Menu_BG" sid="722190645395334">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="497705078400047" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500741" original-source="C:\Users\marke\Desktop\Project Models\Menu\MENU_BG.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="809978001121974">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Browser" sid="684437397000969">
+            <plugin id="Browser" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Menu.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>ES_menu.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="4" />
+        <global-instance type="Browser" uid="5" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
