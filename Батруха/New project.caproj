@@ -8,9 +8,11 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>18zd15iimr3fa</unique-id>
-    <saved-with-version>27200</saved-with-version>
+    <saved-with-version>27500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
@@ -33,6 +35,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -497,18 +500,63 @@
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\MacSquizzy\Downloads\heart.png" />
         </object-type>
+        <object-type name="Button1" sid="711148518521194">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="211572928703991" speed="0">
+                    <frame duration="1" hotspotX="0.505988" hotspotY="0.463415" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.461538" original-source="C:\Users\marke\Desktop\Project Models\Menu\Button2-1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button2" sid="373061671657598">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="294145199089193" speed="0">
+                    <frame duration="1" hotspotX="0.525373" hotspotY="0.459677" />
+                    <frame duration="1" hotspotX="0.523529" hotspotY="0.453846" original-source="C:\Users\marke\Desktop\Project Models\Menu\Button2-2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Menu_BG" sid="735471707983718">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410564258268867" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500741" original-source="C:\Users\marke\Desktop\Project Models\Menu\MENU_BG.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button3" sid="733912172959065">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="506422735395802" speed="0">
+                    <frame duration="1" hotspotX="0.491071" hotspotY="0.495935" original-source="C:\Users\marke\Desktop\Project Models\Menu\Buttons1.png" />
+                    <frame duration="1" hotspotX="0.491176" hotspotY="0.492308" original-source="C:\Users\marke\Desktop\Project Models\Menu\Button2-3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="454435054771513">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Browser" sid="878468311028537">
+            <plugin id="Browser" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
+        <layout>Menu.xml</layout>
         <layout>Level1.xml</layout>
         <layout>Level2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>EventSheetL1.xml</event-sheet>
         <event-sheet>EventSheetL2.xml</event-sheet>
+        <event-sheet>es_menu.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="3" />
+        <global-instance type="Mouse" uid="33" />
+        <global-instance type="Browser" uid="34" />
     </global-instances>
     <sounds-folder />
     <music-folder />

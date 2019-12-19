@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>es_menu</name>
+    <events>
+        <event-block sid="494521750636869">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="292144772605938" type="Mouse">
+                    <param id="0" name="Object">Button1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="501540705008222" type="Button1">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="843968911721035">
+            <conditions>
+                <condition id="-22" name="Else" sid="698359784980615" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="420109275709668" type="Button1">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="191761304581616">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="891237749706842" type="Mouse">
+                    <param id="0" name="Object">Button2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="430683163234237" type="Button2">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="538471887839021">
+            <conditions>
+                <condition id="-22" name="Else" sid="823750039584735" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="214902948448480" type="Button2">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="959466378961731">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="219963602158142" type="Mouse">
+                    <param id="0" name="Object">Button3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="450962264453380" type="Button3">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="748341257903076">
+            <conditions>
+                <condition id="-22" name="Else" sid="575039338089105" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="567390985768806" type="Button3">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="439981323982947">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="930788402033425" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Button1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="705564866031911" type="System">
+                    <param id="0" name="Layout">&quot;Level1&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="658976013175882">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="591899046946054" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Button3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Close" sid="652170851392361" type="Browser" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
