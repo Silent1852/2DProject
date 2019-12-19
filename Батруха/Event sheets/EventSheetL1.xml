@@ -126,6 +126,62 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="422219600297123" title="AnimationEnemy">
+            <sub-events>
+                <event-block sid="543763791501424">
+                    <conditions>
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="786891652284009" type="Enemy" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="101330206952729">
+                            <conditions>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="191804681883310" type="Enemy" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="856068745183530" type="Enemy">
+                                    <param id="0" name="Animation">&quot;Running&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="970769475287101">
+                            <conditions>
+                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="342268205878265" type="Enemy" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="437891139263389" type="Enemy">
+                                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="954470901644019">
+                    <conditions>
+                        <condition behavior="Platform" id="5" name="On jump" sid="440248540438138" type="Enemy" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="891061630974021" type="Enemy">
+                            <param id="0" name="Animation">&quot;Jumping&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="818542686445229">
+                    <conditions>
+                        <condition behavior="Platform" id="6" name="On fall" sid="417005098919763" type="Enemy" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="368216575712119" type="Enemy">
+                            <param id="0" name="Animation">&quot;Stand&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-block sid="867050665014022">
             <conditions>
                 <condition id="-10" name="Compare opacity" sid="513748007527726" type="Background3">
@@ -212,6 +268,135 @@
             <actions>
                 <action id="-2" name="Go to layout" sid="797161872196575" type="System">
                     <param id="0" name="Layout">Level2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="785314492017883" title="Enemy AI">
+            <sub-events>
+                <event-block sid="893410547973063">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="470192458230632" type="System">
+                            <param id="0" name="First value">distance(Enemy.X,Enemy.Y,MainHero.X,MainHero.Y)</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Second value">100</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="453452130537854" type="Enemy">
+                            <param id="0" name="Instance variable">Angry</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="710668107595036" type="Enemy">
+                            <param id="0" name="Max Speed">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="741007582578955" type="System">
+                            <param id="0" name="Group name">&quot;AnimationEnemy&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="411656998954857" type="Enemy">
+                            <param id="0" name="Animation">&quot;Punching&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="917130010527875">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="175221425385669" type="System">
+                                    <param id="0" name="First value">Enemy.X</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">MainHero.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="927210877302405" type="Enemy">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="856756407039332" type="Enemy">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="899580502581423">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="610456192841106" type="System">
+                                    <param id="0" name="First value">Enemy.X</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">MainHero.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="920399396362142" type="Enemy">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="297030930819445" type="Enemy">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="612166161468016">
+                    <conditions>
+                        <condition behavior="Platform" id="10" name="Is by wall" sid="679435583813177" type="Enemy">
+                            <param id="0" name="Side">0</param>
+                        </condition>
+                        <condition behavior="Platform" id="10" name="Is by wall" sid="405840152119686" type="Enemy">
+                            <param id="0" name="Side">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="591620405687463" type="Enemy">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="609001610643572">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="171907599309932" type="Enemy">
+                            <param id="0" name="Instance variable">Angry</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="645907159509331" type="Enemy">
+                            <param id="0" name="Object">MainHero</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="426226101353026" type="Enemy">
+                            <param id="0" name="Instance variable">Angry</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="682339239829157">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" inverted="1" name="Has LOS to object" sid="748440389002947" type="Enemy">
+                            <param id="0" name="Object">MainHero</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="627015634905836" type="Enemy">
+                            <param id="0" name="Instance variable">Angry</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="323564190102179">
+            <conditions>
+                <condition id="4" name="On finished" sid="610182642838511" type="Enemy">
+                    <param id="0" name="Animation">&quot;Punching&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="1" name="Set max speed" sid="304579352192276" type="Enemy">
+                    <param id="0" name="Max Speed">220</param>
+                </action>
+                <action id="-12" name="Set group active" sid="313997826993554" type="System">
+                    <param id="0" name="Group name">&quot;AnimationEnemy&quot;</param>
+                    <param id="1" name="State">1</param>
                 </action>
             </actions>
         </event-block>

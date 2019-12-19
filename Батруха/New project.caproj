@@ -16,6 +16,7 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
@@ -51,6 +52,9 @@
     <object-folder>
         <object-type name="MainHero" sid="418887242810724">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="HitPoints" sid="246320254321687" type="number" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="2" loop="1" name="Standing" pingpong="0" repeatcount="1" repeatto="0" sid="993568696199691" speed="3">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\project\AllAnimations\StandMH\НовыеНа150\MainHeroStandRight.png">
@@ -384,6 +388,114 @@
                 </behavior-type>
             </behaviors>
             <texture original-source="C:\Users\MacSquizzy\Downloads\FonVtorogooZemlya.png" />
+        </object-type>
+        <object-type name="Enemy" sid="589716818386895">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Angry" sid="275687758022359" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="831171511677885">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="LineOfSight" sid="487565991297010">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Running" pingpong="0" repeatcount="1" repeatto="0" sid="843944365029806" speed="6">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\project\AllAnimations\Enemy and Bosses\Enemy\Enemy_Run0.png">
+                        <collision-poly>
+                            <point x="0.230175" y="0.455639" />
+                            <point x="0.502456" y="0.452632" />
+                            <point x="0.500351" y="1" />
+                            <point x="0.221404" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\project\AllAnimations\Enemy and Bosses\Enemy\Enemy_Run1.png">
+                        <collision-poly>
+                            <point x="0.187778" y="0.375662" />
+                            <point x="0.52926" y="0.377875" />
+                            <point x="0.535926" y="1" />
+                            <point x="0.187778" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\project\AllAnimations\Enemy and Bosses\Enemy\Enemy_Run2.png">
+                        <collision-poly>
+                            <point x="0.248542" y="0.380654" />
+                            <point x="0.652813" y="0.376885" />
+                            <point x="0.651667" y="1" />
+                            <point x="0.248542" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="Punching" pingpong="0" repeatcount="1" repeatto="0" sid="326445334046635" speed="10">
+                    <frame duration="1" hotspotX="0.472727" hotspotY="0.267176" original-source="C:\project\AllAnimations\Enemy and Bosses\Enemy\anim_hit_enemy1.png">
+                        <collision-poly>
+                            <point x="0.235758" y="0.454721" />
+                            <point x="0.52" y="0.451828" />
+                            <point x="0.526667" y="1" />
+                            <point x="0.235758" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.478632" hotspotY="0.272727" original-source="C:\project\AllAnimations\Enemy and Bosses\Enemy\anim_hit_enemy2.png">
+                        <collision-poly>
+                            <point x="0.215555" y="0.470335" />
+                            <point x="0.460171" y="0.467384" />
+                            <point x="0.458291" y="1" />
+                            <point x="0.215556" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.464912" hotspotY="0.278196" original-source="C:\project\AllAnimations\Enemy and Bosses\Enemy\anim_hit_enemy3.png">
+                        <collision-poly>
+                            <point x="0.238947" y="0.455639" />
+                            <point x="0.511228" y="0.467669" />
+                            <point x="0.509123" y="1" />
+                            <point x="0.238947" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="Jumping" pingpong="0" repeatcount="1" repeatto="0" sid="221950574901491" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\project\AllAnimations\Enemy and Bosses\Enemy\JUMP0.png">
+                        <collision-poly>
+                            <point x="0.236842" y="0.300752" />
+                            <point x="0.491229" y="0.285714" />
+                            <point x="0.5" y="0.992481" />
+                            <point x="0.236842" y="0.992481" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\project\AllAnimations\Enemy and Bosses\Enemy\JUMP1.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.367347" />
+                            <point x="0.518519" y="0.353741" />
+                            <point x="0.527778" y="0.993197" />
+                            <point x="0.25" y="0.993197" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\project\AllAnimations\Enemy and Bosses\Enemy\JUMP2.png">
+                        <collision-poly>
+                            <point x="0.194444" y="0.409091" />
+                            <point x="0.462964" y="0.393939" />
+                            <point x="0.472222" y="1" />
+                            <point x="0.194444" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="538915740912069" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\project\AllAnimations\Enemy and Bosses\Enemy\Enemy_Run0.png">
+                        <collision-poly>
+                            <point x="0.219298" y="0.353383" />
+                            <point x="0.526315" y="0.345865" />
+                            <point x="0.517544" y="0.992481" />
+                            <point x="0.210526" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HitPointBar" sid="329259769505845">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\MacSquizzy\Downloads\heart.png" />
         </object-type>
     </object-folder>
     <families />
